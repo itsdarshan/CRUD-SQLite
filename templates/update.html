@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>update</title>
+</head>
+<body>
+	<body>
+	<form action="{{ url_for('updaterecord') }}" method="POST">
+	<table border="1">
+			<tr>
+				<th>ENTER ID FOR update RECORD:</th>
+				<td>  <input type="number" name="id"></td>
+			</tr>
+			<tr>
+				<th>Name</th>
+				<td><input type="text" name="nm"><br></td>
+				
+			</tr>
+			<tr>
+				<th>Address</th>
+				<td><input type="text" name="add"></td>
+				
+			</tr>
+			<tr>
+				<th>City</th>
+				<td><input type="text" name="ct"></td>
+				
+			</tr>
+			<tr>
+				<th>Pincode</th>
+				<td> <input type="number" name="pc"></td>
+		
+			</tr>
+
+		
+		</table>
+		<input type="submit" value="submit">
+	</form>
+	<a href="{{ url_for('list') }}">go back to database</a> 
+	{{msg1}}
+</body>
+</body>
+</html>
+
+	

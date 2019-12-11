@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Info</title>
+</head>
+<body>
+	<form method="POST" action="{{ url_for('addrec') }}">
+		<table border="1">
+			<tr>
+				<th>id</th>
+				<td> <input type="text" name="id"></td>
+			</tr>
+			<tr>
+				<th>Name</th>
+				<td><input type="text" name="nm"><br></td>
+				
+			</tr>
+			<tr>
+				<th>Address</th>
+				<td><input type="text" name="add"></td>
+				
+			</tr>
+			<tr>
+				<th>City</th>
+				<td><input type="text" name="ct"></td>
+				
+			</tr>
+			<tr>
+				<th>Pincode</th>
+				<td> <input type="number" name="pc"></td>
+		
+			</tr>
+
+		
+		</table>
+		<input type="submit" value="submit">
+	</form>
+</body>
+</html>

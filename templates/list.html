@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result</title>
+</head>
+<body>
+	<table border="1"> 
+		<tr>
+			<td>Id</td>
+			<td>Name</td>
+			<td>City</td>
+			<td>Pincode</td>
+			<td>Address</td>
+		</tr>
+		{% for row in rows %}
+		<tr>
+			<td>{{ row['id'] }}</td>
+			<td>{{ row['nm'] }}</td>
+			<td>{{ row['ct'] }}</td>
+			<td>{{ row['pc'] }}</td>
+			<td>{{ row['addr'] }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+	
+	<a href="/delete">Delete record</a>
+	<a href="/update">Update Record</a>
+
+
+	<a href="/">GO back to home page</a>
+
+</body>
+</html>

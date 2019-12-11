@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>delete</title>
+</head>
+<body>
+	<form action="{{ url_for('deleterecord') }}" method="POST">
+	ENTER ID FOR DELETE RECORD: <input type="number" name="id">
+	<input type="submit" name="sub" value="submit">
+	</form>
+	<a href="{{ url_for('list') }}">go back to database</a>
+	{{msg}}
+</body>
+</html>	
